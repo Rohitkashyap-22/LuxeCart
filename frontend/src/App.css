@@ -1,0 +1,12 @@
+.app {
+     color: rgb(85, 5, 37);
+}
+.app h1{
+     font-size: 40px;
+     justify-self: center;
+}
+.app p{
+     font-size:25px;
+     justify-self: center;
+     margin-bottom: 30px;
+}

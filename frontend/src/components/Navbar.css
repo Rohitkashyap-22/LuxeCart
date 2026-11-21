@@ -1,0 +1,36 @@
+.navbar{
+     display: flex;
+     justify-content:space-between;
+     align-items: center;
+     background-color: rgb(232, 216, 194);
+     margin: 10px;
+     padding: 0 10px 0 10px;
+     border-radius: 3px;
+     font-size: 19px;
+}
+
+.navbar div{
+     display: flex;
+     align-items: center;
+     gap: 25px;
+}
+
+.navbar a{
+     color: black;
+     text-decoration: none;
+     transition: color 0.2s ease;
+}
+.navbar a:hover{
+     cursor: pointer;
+     color: rgb(33, 158, 200);
+     text-decoration: underline;
+}
+
+.navbar input{
+     box-sizing: border-box;
+     border: none;
+     width: 180px;
+     height: 35px;
+     padding: 10px;
+     border-radius: 3px;
+}
