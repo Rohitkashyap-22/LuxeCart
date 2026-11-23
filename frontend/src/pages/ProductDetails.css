@@ -1,0 +1,27 @@
+.details{
+     display: flex;
+     margin: 10px;
+     gap: 30px;
+}
+.details img{
+     border: none;
+     border-radius: 25px;
+     width: 40%;
+     object-fit: cover;
+}
+.details div{
+     width: 50%;
+     display: flex;
+     border-radius: 10px;
+     flex-direction: column;
+     padding: 30px;
+     background-color:rgb(253, 253, 234)
+}
+.details h2{
+     font-size: 32px;
+     margin: 10px;
+}
+.details p{
+     font-size: 22px;
+     margin: 10px;
+}

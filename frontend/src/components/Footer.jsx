@@ -1,23 +1,23 @@
-import React from "react";
+import './Footer.css'
 
 const Footer = () => {
   return (
-    <div>
-      <h2>LuxeCart</h2>
+    <div className="footer">
+      <h2>LuxeCart.</h2>
       <p>Discover your style. Shop with confidence.</p>
-      <div>
-        <div>
-          <h2>Quick Links</h2>
-          <a>Home</a>
-          <a>Products</a>
-          <a>Cart</a>
-          <a>My Orders</a>
+      <div className="container">
+        <div className="links">
+          <h4>Quick Links</h4>
+          <a href="">Home</a>
+          <a href="">Products</a>
+          <a href="">Cart</a>
+          <a href="">My Orders</a>
         </div>
-        <div>
-          <h2>Contact Us</h2>
-          <a>Email: support@luxecart.com</a>
-          <a>Instagram</a>
-          <a>Facebook</a>
+        <div className="links">
+          <h4>Contact Us</h4>
+          <a href="">Email: support@luxecart.com</a>
+          <a href="">Instagram</a>
+          <a href="">Facebook</a>
         </div>
       </div>
       <h5>© 2026 LuxeCart. All Rights Reserved.</h5>

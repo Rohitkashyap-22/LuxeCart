@@ -1,0 +1,49 @@
+.footer {
+     padding: 25px 40px 15px;
+     background-color: beige;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin: 10px;
+}
+.footer h2{
+     font-size: 30px;
+     margin: 5px 0;
+}
+.footer p{
+     font-size: 18px;
+     margin: 10px 0 25px; 
+}
+.container{
+     display: flex;
+     justify-content: space-around;
+     gap: 150px;
+     width: 100%;
+     padding:10px 0 25px; 
+}
+.container h4{
+     font-size: 19px;
+     margin: 0 0 8px;
+     text-decoration: underline;
+}
+.links{
+     display: flex;
+     flex-direction: column;
+     gap: 12px;
+     min-width: 150px;
+}
+.footer a{
+     text-decoration: none;
+     cursor: pointer;
+     color: rgb(8, 62, 180);
+}
+.footer a:hover{
+     text-decoration: underline;
+     color: brown;
+}
+.footer h5 {
+    font-size: 14px;
+    font-weight: normal;
+    margin: 10px 0 5px;
+    text-decoration: underline;
+}

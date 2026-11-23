@@ -1,0 +1,51 @@
+export const products = [
+  {
+    id: 1,
+    name: "Bangles",
+    category: "Accessories",
+    price: 799,
+    image: "/products/Bangles.jpg",
+  },
+  {
+    id: 2,
+    name: "Bracelete",
+    category: "Accessories",
+    price: 999,
+    image: "/products/Bracelete.jpg",
+  },
+  {
+    id: 3,
+    name: "Handbag",
+    category: "Accessories",
+    price: 1599,
+    image: "/products/Handbag.jpg",
+  },
+  {
+    id: 4,
+    name: "Scarf",
+    category: "Accessories",
+    price: 499,
+    image: "/products/scarf.jpg",
+  },
+  {
+    id: 5,
+    name: "Shirt",
+    category: "Clothing",
+    price: 1299,
+    image: "/products/Shirt.jpg",
+  },
+  {
+    id: 6,
+    name: "Shoes",
+    category: "Footwear",
+    price: 2499,
+    image: "/products/Shoes.jpg",
+  },
+  {
+    id: 7,
+    name: "Watch",
+    category: "Accessories",
+    price: 2999,
+    image: "/products/Watch.jpg",
+  },
+];
