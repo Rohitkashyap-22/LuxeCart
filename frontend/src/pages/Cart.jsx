@@ -1,4 +1,5 @@
-import './Cart.css'
+import "./Cart.css";
+import { Link } from "react-router-dom";
 
 const cartItems = [
   {
@@ -48,33 +49,33 @@ const Cart = () => {
     <div className="cart">
       <h2>Shopping Cart</h2>
       <div className="cart-summary">
-          <div className="item-container">
-            {cartItems.map((item) => {
-              return (
-                  <div key={item.id} className="itemcard">
-                    <img src={item.image} alt="" />
-                    <div className='description'>
-                      <h4>{item.name}</h4>
-                      <p>description</p>
-                      <p>Quantity: {item.quantity}</p>
-                      <h4>${item.price}</h4>
-                    </div>
-                    <button>Remove</button>
-                  </div>
-              );
-            })}
-          </div>
-        
+        <div className="item-container">
+          {cartItems.map((item) => {
+            return (
+              <div key={item.id} className="itemcard">
+                <img src={item.image} alt="" />
+                <div className="description">
+                  <h4>{item.name}</h4>
+                  <p>description</p>
+                  <p>Quantity: {item.quantity}</p>
+                  <h4>${item.price}</h4>
+                </div>
+                <button>Remove</button>
+              </div>
+            );
+          })}
+        </div>
+
         <div className="summary">
           <h3>Order Summary</h3>
           <p>Subtotal: $ </p>
           <p>Shipping: $ </p>
           <h4>Total: $ </h4>
-          <button>Checkout</button>
+          <Link to="/checkout">Checkout</Link>
         </div>
       </div>
     </div>
   );
-}
+};
 
-export default Cart
+export default Cart;

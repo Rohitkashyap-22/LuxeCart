@@ -84,7 +84,12 @@
      font-size: 22px;
      margin-top: 10px;
 }
-.summary button{
+.summary a{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     font-size: 16px;
      width: 100%;
      height: 40px;
      border: none;
@@ -92,7 +97,8 @@
      background-color: rgb(13, 123, 94);
      color: white;
      cursor: pointer;
+     text-decoration: none;
 }
-.summary button:hover{
+.summary a:hover{
      background-color: rgb(4, 152, 113);;
 }
