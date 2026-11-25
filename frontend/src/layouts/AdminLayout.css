@@ -32,7 +32,7 @@
      border: none;
      border-radius: 8px;
      cursor: pointer;
-     transition: 0.1s ease;
+     transition: background-color 0.3s ease;
 }
 .admin-navigation a:hover{
      background-color: rgb(195, 44, 137);
@@ -43,8 +43,6 @@
 
 /* right side container - outlet */
 .admin-main{
-     
-     /* background-color: antiquewhite; */
      padding: 10px;
      font-size: 20px;
      display: flex;
