@@ -1,6 +1,10 @@
-import './Home.css'
+import "./Home.css";
+import { products } from "../data/product";
+import ProductCard from "../components/ProductCard";
 
 const Home = () => {
+  const productList = products.slice(0, 4);
+
   return (
     <>
       <div className="hero">
@@ -38,35 +42,20 @@ const Home = () => {
 
       <div className="featured">
         <h2>Featured Products</h2>
-        <div className='featured-container'>
-          <div className="product">
-            <img src="./sneakers.jpg" alt="sneakers" />
-            <h3>Sneakers</h3>
-            <p>$400</p>
-            <button>Add to Cart</button>
-          </div>
-          <div className="product">
-            <img src="./watch.jpg" alt="watch" />
-            <h3>Watch</h3>
-            <p>$800</p>
-            <button>Add to Cart</button>
-          </div>
-          <div className="product">
-            <img src="./handbag.jpg" alt="handbag" />
-            <h3>Handbag</h3>
-            <p>$300</p>
-            <button>Add to Cart</button>
-          </div>
-          <div className="product">
-            <img src="./shirt.jpg" alt="tshirt" />
-            <h3>Shirt</h3>
-            <p>$300</p>
-            <button>Add to Cart</button>
-          </div>
+        <div className="featured-container">
+          {productList.map((elem) => {
+            return (
+              <ProductCard
+                key={elem.id}
+                product={elem}
+                buttonType="addToCart"
+              />
+            );
+          })}
         </div>
       </div>
     </>
   );
-}
+};
 
-export default Home
+export default Home;

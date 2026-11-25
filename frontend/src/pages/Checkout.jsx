@@ -1,29 +1,6 @@
-const orderItems = [
-  {
-    id: 1,
-    name: "Bangles",
-    price: 799,
-    image: "/products/Bangles.jpg",
-    quantity: 2,
-  },
-  {
-    id: 2,
-    name: "Bracelete",
-    price: 999,
-    image: "/products/Bracelete.jpg",
-    quantity: 1,
-  },
-  {
-    id: 3,
-    name: "Handbag",
-    price: 1499,
-    image: "/products/Handbag.jpg",
-    quantity: 1,
-  },
-];
-
 import "./Checkout.css";
-import { Link } from "react-router-dom";
+import OrderSummary from "../components/OrderSummary";
+import { orderItems } from "../data/product";
 
 const Checkout = () => {
 
@@ -97,27 +74,8 @@ const Checkout = () => {
         </div>
       </form>
 
-      <div className="order-summary">
-        <h3>Order Summary</h3>
-
-        {orderItems.map((item)=>{
-          return (
-            <div key={item.id} className="order-itemcard">
-              <img src={item.image} alt="" />
-              <div>
-                <h4>{item.name}</h4>
-                <p>Quantity: {item.quantity}</p>
-              </div>
-              <h4>${item.price * item.quantity}</h4>
-            </div>
-          );
-        })}
-        
-        <p>Subtotal: ${subtotal} </p>
-        <p>Shipping: ${shipping} </p>
-        <h4>Total: ${subtotal+shipping} </h4>
-        <Link to="/checkout">Place Order</Link>
-      </div>
+      <OrderSummary orderItems={orderItems} page="checkout" shipping={shipping} subtotal={subtotal}/>
+      
     </div>
   );
 };
