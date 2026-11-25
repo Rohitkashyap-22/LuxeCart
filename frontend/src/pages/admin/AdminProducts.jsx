@@ -80,12 +80,7 @@ const AdminProducts = () => {
 
       {/* Search and Filters */}
       <div className="product-filters">
-        <input
-          type="text"
-          name="product-search"
-          id="product-search"
-          placeholder="Search Products..."
-        />
+        <input type="text" name="product-search" id="product-search" placeholder="Search Products..." />
         <div className="filters">
           <select name="category" id="category" defaultValue="">
             <option value="">All Categories</option>

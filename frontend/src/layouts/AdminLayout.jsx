@@ -16,7 +16,7 @@ const AdminLayout = () => {
             <NavLink to="/admin" end>Dashboard</NavLink>
             <NavLink to="/admin/products">Products</NavLink>
             <NavLink to="/admin/orders">Orders</NavLink>
-            <NavLink to="/customers">Customers</NavLink>
+            <NavLink to="/admin/customers">Customers</NavLink>
             <NavLink to="/login">Logout</NavLink>
           </div>
 
