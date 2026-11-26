@@ -4,3 +4,12 @@
   gap: 20px;
   padding: 10px;
 }
+
+#product-select {
+  margin: 20px 10px 10px 10px;
+  width: 170px;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+}

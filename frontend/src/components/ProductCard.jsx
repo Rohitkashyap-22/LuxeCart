@@ -13,6 +13,7 @@ const ProductCard = ({product, buttonType}) => {
                     ? <Link to={`${product.id}`}>View Details</Link>
                     : <button>Add to Cart</button>
                }
+               
           </div>
      );
 }
