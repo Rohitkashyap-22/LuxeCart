@@ -34,3 +34,18 @@
      padding: 10px;
      border-radius: 3px;
 }
+
+.navbar form button {
+     margin-left: 5px;
+    padding: 8px 16px;
+    background-color: #89260a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.navbar form button:hover {
+    background-color: #c03b0f;
+}

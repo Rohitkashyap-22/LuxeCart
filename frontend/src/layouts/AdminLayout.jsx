@@ -1,8 +1,7 @@
-import { Outlet, useLocation, NavLink } from "react-router-dom";
+import { Outlet, NavLink } from "react-router-dom";
 import "./AdminLayout.css";
 
 const AdminLayout = () => {
-  const x = useLocation();
 
   return (
     <>
