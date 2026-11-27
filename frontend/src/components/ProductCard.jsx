@@ -1,7 +1,12 @@
 import { Link } from 'react-router-dom';
 import "./ProductCard.css";
+import {useContext} from "react";
+import {CartContext} from "../context/CartContext";
 
 const ProductCard = ({product, buttonType}) => {
+
+     const {addToCart} = useContext(CartContext)
+
      return (
           <div className="product-card">
                
@@ -11,7 +16,7 @@ const ProductCard = ({product, buttonType}) => {
                <p>${product.price}</p>
                { buttonType === "details" 
                     ? <Link to={`${product.id}`}>View Details</Link>
-                    : <button>Add to Cart</button>
+                    : <button onClick={()=>addToCart(product)}>Add to Cart</button>
                }
                
           </div>
