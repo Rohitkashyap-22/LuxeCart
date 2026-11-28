@@ -2,12 +2,12 @@ import "./OrderSummary.css"
 
 import { Link } from "react-router-dom";
 
-const OrderSummary = ({orderItems, page, shipping, subtotal}) => {
+const OrderSummary = ({orderItems, page, shipping, subtotal, paymentMethod}) => {
   return (
     <div className="order-summary">
       <h3>Order Summary</h3>
 
-      {page === "checkout" &&
+      {(page === "checkout" || page === "ordersuccess") &&
         orderItems.map((item) => {
           return (
             <div key={item.id} className="order-itemcard">
@@ -21,10 +21,34 @@ const OrderSummary = ({orderItems, page, shipping, subtotal}) => {
           );
         })}
 
-      <p>Subtotal: ${subtotal} </p>
-      <p>Shipping: ${shipping} </p>
-      <h4>Total: ${subtotal + shipping} </h4>
-      {page === "checkout" && <Link to="/checkout">Place Order</Link>}
+      <p>
+        <span>Subtotal</span>
+        <span>${subtotal}</span>
+      </p>
+
+      <p>
+        <span>Shipping</span>
+        <span>${shipping}</span>
+      </p>
+
+      {page === "ordersuccess" && (
+        <p>
+          <span>Payment Method</span>
+          <span>{paymentMethod}</span>
+        </p>
+      )}
+
+      <h4>
+        <span>Total</span>
+        <span>${subtotal + shipping}</span>
+      </h4>
+
+      {page === "checkout" && (
+        <button type="submit" form="checkout-form">
+          Place Order
+        </button>
+      )}
+
       {page === "cart" && <Link to="/checkout">Checkout</Link>}
     </div>
   );

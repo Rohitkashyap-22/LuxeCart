@@ -14,6 +14,7 @@ import AdminProducts from "./pages/admin/AdminProducts";
 import AdminOrders from "./pages/admin/AdminOrders";
 import AdminCustomers from "./pages/admin/AdminCustomers";
 import ProductDetails from "./pages/ProductDetails";
+import OrderSuccess from "./pages/OrderSuccess";
 import { CartProvider } from "./context/CartContext";
 
 
@@ -36,7 +37,8 @@ function App() {
             <Route path="/checkout" element={<Checkout />} />
             <Route path="/login" element={<Auth isLogin={true} />} />
             <Route path="/register" element={<Auth isLogin={false} />} />
-            <Route path="/admin" element={<AdminLayout />}>
+            <Route path="order-success" element={<OrderSuccess />} />
+            <Route path="/admin" element={<AdminLayout />}> 
               <Route index element={<Dashboard />} />
               <Route path="products" element={<AdminProducts />} />
               <Route path="orders" element={<AdminOrders />} />

@@ -31,7 +31,8 @@
     padding-top: 12px;
 }
 
-.order-summary a {
+.order-summary a,
+.order-summary button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,13 +48,13 @@
     transition: background-color 0.2s ease;
 }
 
-.order-summary a:hover {
+.order-summary a:hover,
+.order-summary button:hover{
     background-color: rgb(4, 152, 113);
 }
 
 .order-itemcard{
     margin-bottom: 15px;
-    /* border: solid black 1px; */
     padding: 0px;
     display: flex;
     justify-content: space-between;
@@ -74,4 +75,39 @@
     margin: 0;
     padding: 0;
 }
+
+
+/* Subtotal and Shipping */
+.order-summary > p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    margin: 12px 0;
+}
+
+/* Line above Subtotal */
+.order-summary > p:nth-of-type(1) {
+    border-top: 1px solid rgb(220, 210, 210);
+    padding-top: 18px;
+    margin-top: 20px;
+}
+
+/* Total Amount */
+.order-summary > h4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+    color: rgb(85, 5, 37);
+    border-top: 1px solid rgb(220, 210, 210);
+    padding-top: 18px;
+    margin: 12px 0 18px;
+}
+
+
+.order-summary span{
+    color: green;
+}
+
+
 
